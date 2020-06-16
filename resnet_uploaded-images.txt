@@ -1,0 +1,71 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                sea_otter01.jpg  label:                        sea
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                   sword_01.jpg  label:                      sword
+
+     MATCH:
+
+ NOT A MATCH:
+
+               sea_otter01.jpg: 
+Real:                        sea   Classifier:                          otter
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: bouvier des flandres, bouviers des flandres
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: bouvier des flandres, bouviers des flandres
+
+                  sword_01.jpg: 
+Real:                      sword   Classifier:                       scabbard
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+               sea_otter01.jpg: 
+Real:                        sea   Classifier:                          otter  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: bouvier des flandres, bouviers des flandres  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: bouvier des flandres, bouviers des flandres  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                  sword_01.jpg: 
+Real:                      sword   Classifier:                       scabbard  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+model: resnet
+# images: 4
+# dog images: 2
+# not dog images: 2
+pct_match: 0
+pct_correct_dogs: 100.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 100.0
+pet: dog classified: bouvier des flandres, bouviers des flandres
+pet: dog classified: bouvier des flandres, bouviers des flandres
+
+** Total Elapsed Runtime: 0:0:30
